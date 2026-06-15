@@ -10,29 +10,48 @@ body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 h2 { color: #5c4a3a; margin-bottom: 8px; }
 .price { font-size: 36px; font-weight: 800; color: #c9a87c; margin: 16px 0; }
 .info { color: #888; font-size: 14px; margin-bottom: 24px; }
-.qr { width: 260px; height: 260px; border: 2px solid #e8d5b7; border-radius: 16px; margin: 16px auto; background: #fff; display: flex; align-items: center; justify-content: center; color: #bbb; font-size: 14px; }
-.steps { text-align: left; max-width: 360px; margin: 24px auto; color: #666; font-size: 14px; line-height: 2; }
-.steps span { color: #c9a87c; font-weight: 600; }
+.pay-box { max-width: 400px; margin: 20px auto; background: #fff; border-radius: 16px; padding: 24px; border: 1px solid #e8d5b7; text-align: left; }
+.pay-box h3 { font-size: 16px; margin-bottom: 12px; }
+.alipay-btn { display: block; background: #1677ff; color: #fff; padding: 14px; border-radius: 12px; text-decoration: none; font-size: 18px; font-weight: 600; margin-bottom: 12px; text-align: center; }
+.alipay-btn:hover { background: #0958d9; }
+.copy-row { background: #f5f5f5; padding: 12px; border-radius: 8px; font-size: 14px; word-break: break-all; margin-bottom: 8px; }
+.copy-row code { font-size: 16px; color: #333; }
+.steps { color: #666; font-size: 13px; line-height: 2; margin-top: 12px; }
+.steps span { color: #1677ff; font-weight: 600; }
 .note { color: #f0a060; font-size: 13px; margin-top: 16px; }
+.or { color: #bbb; margin: 16px 0; font-size: 13px; }
 </style>
 </head>
 <body>
 <h2>📘 AI副业完全指南</h2>
 <div class="price">¥19.9</div>
-<p class="info">微信扫码支付 · 自动发货到邮箱</p>
+<p class="info">支付宝付款 · 手动发货到邮箱</p>
 
-<div class="qr">
-  [请替换为你的微信收款码]
+<div class="pay-box">
+  <h3>方式一：支付宝一键付款</h3>
+  <a href="alipays://platformapi/startapp?appId=20000123&actionType=toAccount&account=13958050965&amount=19.9&memo=AI指南" class="alipay-btn">📱 打开支付宝支付 ¥19.9</a>
+  
+  <p style="font-size:12px;color:#999;text-align:center">或手动转账到：</p>
+  <div class="copy-row">
+    <span style="color:#888">支付宝账号：</span><code>13958050965</code>
+  </div>
+  <div class="copy-row">
+    <span style="color:#888">金额：</span><code>¥19.90</code>
+  </div>
 </div>
 
 <div class="steps">
-  <span>①</span> 微信扫码支付 ¥19.9<br>
+  <span>①</span> 点击上方按钮或手动支付宝转账 ¥19.9<br>
   <span>②</span> 支付完成后发邮件到 wuyueren@gmail.com<br>
   <span>③</span> 标题写「已购AI指南」+ 付款截图<br>
   <span>④</span> 24小时内回复PDF下载链接
 </div>
 
-<p class="note">⚠️ 这是手动发货通道，海外用户请用 Gumroad</p>
-<p style="margin-top:24px"><a href="https://wuyueren.gumroad.com/l/hkmmee" style="color:#c9a87c;">🌍 海外用户点此购买 (Gumroad $5.99)</a></p>
+<p class="note">⚠️ 手动发货通道，海外用户请用下方 Gumroad</p>
+
+<div class="or">——— 或 ———</div>
+
+<a href="https://wuyueren.gumroad.com/l/hkmmee" style="display:inline-block;background:#c9a87c;color:#fff;padding:14px 32px;border-radius:12px;text-decoration:none;font-size:16px;font-weight:600;margin-top:8px">🌍 海外用户 Gumroad $5.99</a>
+
 </body>
 </html>
